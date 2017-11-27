@@ -3,7 +3,9 @@ class UsersController < ApplicationController
 
   # GET /users
   def index
-    @users = User.all
+    @users = User.all.sort_by do |user| # just a quick fix XDD
+      user.point.to_i
+    end.reverse
 
     render json: @users
   end

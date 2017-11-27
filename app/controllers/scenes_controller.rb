@@ -3,7 +3,7 @@ class ScenesController < ApplicationController
 
   # GET /scenes
   def index
-    @scenes = Scene.all
+    @scenes = Scene.order(id: :desc).all
 
     render json: @scenes
   end

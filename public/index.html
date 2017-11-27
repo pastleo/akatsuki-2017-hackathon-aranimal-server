@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <title>Pixel Furenzu</title>
+
+	<script src='./bower_components/lodash/dist/lodash.min.js'></script>
+	<script src="./bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+
+  <script type='module' src='./components/frenzu-app.js'></script>
+  <script type='module' src='./components/frenzu-gallery.js'></script>
+  <script type='module' src='./components/frenzu-ranking.js'></script>
+
+  <style>
+    body {
+      background-image: url(https://i.imgur.com/jd0e87R.jpg);
+      min-height: 100vh;
+    }
+    @font-face {
+      font-family: SubwayTicket;
+      src: url(./font/subway-ticket.ttf);
+    }
+    #remove-if-support {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <p id="remove-if-support">Sorry, your browser does not support this website, please use latest <a href="https://www.google.com.tw/chrome/browser/desktop/index.html">Chrome</a> or <a href="https://www.mozilla.org/zh-TW/firefox/new/">Firefox</a></p>
+  <frenzu-app></frenzu-app>
+</body>
+</html>

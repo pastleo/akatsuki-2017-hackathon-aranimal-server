@@ -3,11 +3,13 @@ volumes:
   bundle:
     driver: local
 services:
-  ruby:
+  rails:
     build: .
     volumes:
     - .:/workspace
     - bundle:/usr/local/bundle
+    ports:
+    - '19654:3000'
     working_dir: /workspace
     command: sh
 
